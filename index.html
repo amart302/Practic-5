@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="formBl">
+    <form>
+      <input id="nameSurname" type="text" placeholder="Имя и фамилия">
+      <input id="cardNum" type="text" placeholder="Номер карты" maxlength="19" >
+      <input id="cardData" type="text" placeholder="Срок карты" maxlength="5">
+      <input id="cardCVV" type="text" placeholder="CVV" maxlength="3">
+    </form>
+  </div>
+
+
+    <div id="myCardFront">
+      <img id="sberCard" src="./img/sa-18.jpg" alt="">
+      <div id="cardNumber">0000 0000 0000 0000</div>
+      <div id="data">00/00</div>
+      <div id="nameCard">Mr</div>
+    </div>
+
+    <div id="mycardBack">
+      <div class="white_polosa">
+          <div id="cVV">000</div>
+      </div>    
+    </div>
+
+    <button id="checkBtn">Внести в базу</button>
+    
+    <table id="dataBase">
+      <tr>
+        <td>Имя и фамилия</td>
+        <td>Номер карты</td>
+        <td>Срок карты</td>
+        <td>CVV</td>
+      </tr>
+    </table>
+        
+    <script src="index.js"></script>
+</body>
+</html>
